@@ -1,0 +1,30 @@
+/* styles/globals.css */
+
+body {
+  margin: 0;
+  font-family: 'Simplon Norm', sans-serif;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 1rem 0;
+  border-top: 1px solid #ccc;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+}

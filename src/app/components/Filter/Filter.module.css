@@ -1,0 +1,129 @@
+.filterContainer {
+    position: relative;
+}
+
+.filterButton {
+    background: none; 
+    border: none; 
+    color: grey; 
+    font-size: 16px; 
+    padding: 0; 
+    cursor: pointer; 
+    text-align: left; 
+    text-decoration: underline; 
+    text-transform: uppercase;
+    margin: 0; 
+    transition: color 0.3s ease; 
+    margin-bottom: 15px;
+    margin-left: 80px;
+}
+
+.filterSidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px; 
+    width: 300px;
+    background-color: #ffffff;
+    padding: 20px;
+    transition: left 0.3s ease;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.filterSidebar.show {
+    left: 0;
+}
+
+.hideFilter {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.filterContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.totalItems {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.filterOption {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.filterOption input {
+    margin-right: 10px;
+}
+
+.filterCategory {
+    margin-bottom: 15px;
+}
+
+.filterHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.dropdownIcon {
+    margin-left: 10px;
+}
+
+.filterOptions {
+    margin-top: 10px;
+    gap: 2rem;
+}
+
+.filterOptions label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.unselectAll {
+    font-size: 14px;
+    color: #BFC8CD;
+    text-decoration: none;
+    display: block;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .filterButton {
+        margin-left: 20px;
+    }
+    
+    .filterSidebar {
+        width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .filterButton {
+        margin-left: 10px;
+    }
+    
+    .filterSidebar {
+        width: 100%;
+        left: -100%;
+    }
+    
+    .filterSidebar.show {
+        left: 0;
+    }
+    
+    .filterContent {
+        padding: 10px;
+    }
+}

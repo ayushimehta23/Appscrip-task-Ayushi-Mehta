@@ -1,0 +1,69 @@
+/* app/styles/Home.module.css */
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.headerSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem; /* Space between header and product list */
+  gap: 1rem; /* Space between elements */
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Space between items in the left section */
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+}
+
+.productList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Create 4 columns */
+  gap: 1rem; /* Space between grid items */
+  margin-top: 1rem; /* Space above the product list */
+}
+
+.productCard {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.productImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.productTitle {
+  font-size: 1.125rem; 
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.productDescription {
+  font-size: 0.875rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.productPrice {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #0070f3; 
+}

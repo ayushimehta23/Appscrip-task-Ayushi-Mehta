@@ -1,0 +1,17 @@
+.totalItemsContainer {
+    margin-bottom: 1rem; 
+    display: flex;
+    align-items: center;
+  }
+  
+  .totalItemsText {
+    font-size: 1rem;
+    margin-right: 0.5rem; 
+  }
+  
+  .totalItemsCount {
+    font-size: 1rem; 
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  

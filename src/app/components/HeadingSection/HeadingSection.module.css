@@ -1,0 +1,29 @@
+.headingSection {
+  width: 100%;
+  background-color: #f9f9f9;
+  font-weight: 400;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mainHeading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.subHeading {
+  font-size: 1.25rem;
+  color: #666;
+  margin-bottom: 2rem;
+  display: inline-block;
+  max-width: 100%;
+  line-height: 1.6;
+}
